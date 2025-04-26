@@ -14,11 +14,12 @@ public class Apple extends Food {
 
     @Override
     public int getDiscount() {
-        if (colour == Colour.RED_APPLE) {
+        if (Colour.RED_APPLE.equals(colour)) { // Используем .equals() для сравнения строк
             return Discount.RED_APPLE_DISCOUNT;
+        } else {
+            return 0;
         }
-            else return 0;
-        }
+    }
 
     public String getColour() {
         return colour;
