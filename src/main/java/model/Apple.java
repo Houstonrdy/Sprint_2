@@ -14,7 +14,7 @@ public class Apple extends Food {
 
     @Override
     public int getDiscount() {
-        if (Colour.RED_APPLE.equals(colour)) { // Используем .equals() для сравнения строк
+        if (Colour.RED_APPLE.equals(colour)) { //Этого мы еще не проходили, пришлось просить помощи у нейросети и разбираться
             return Discount.RED_APPLE_DISCOUNT;
         } else {
             return 0;
